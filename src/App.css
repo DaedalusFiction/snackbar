@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Notable&family=Shrikhand&display=swap");
+
+:root {
+    --fc-light: #999999;
+    --fc-accent: red;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sliderA {
+    animation: slideA infinite 400s !important;
+}
+.sliderB {
+    animation: slideB infinite 400s !important;
+}
+.sliderA-overlay {
+    animation: slideA-overlay infinite 400s !important;
+}
+.sliderB-overlay {
+    animation: slideB-overlay infinite 400s !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes slideA {
+    0% {
+        transform: translateX(-60%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-60%);
+    }
+}
+@keyframes slideB {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes slideA-overlay {
+    0% {
+        transform: translate(-60%, -100%);
+    }
+    50% {
+        transform: translate(0, -100%);
+    }
+    100% {
+        transform: translate(-60%, -100%);
+    }
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes slideB-overlay {
+    0% {
+        transform: translate(0%, -100%);
+    }
+    50% {
+        transform: translate(-60%, -100%);
+    }
+    100% {
+        transform: translate(0%, -100%);
+    }
 }
