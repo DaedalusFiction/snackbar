@@ -2,6 +2,7 @@ import { createTheme } from "@mui/material";
 
 const FCAccent = "#FE1D1D";
 const FCLight = "#2c2c2c";
+const FCDark = "#353535";
 
 const primary = createTheme({
     palette: {
@@ -22,6 +23,11 @@ const primary = createTheme({
             fontSize: "5.8rem",
             lineHeight: 1.14,
             letterSpacing: "0em",
+        },
+        h2: {
+            fontFamily: "Shrikhand",
+            fontSize: "2.7rem",
+            color: FCDark,
         },
         h3: {
             fontFamily: "Shrikhand",

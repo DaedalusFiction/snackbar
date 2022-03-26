@@ -22,7 +22,7 @@ const Scroller = ({ bandlist }) => {
         fontFamily: "Notable",
         fontSize: "max(.55rem, 2.5vw)",
         color: "transparent",
-        WebkitTextStroke: "2px #999999",
+        WebkitTextStroke: "1px #999999",
         letterSpacing: ".15em",
         zIndex: 3,
         whiteSpace: "nowrap",

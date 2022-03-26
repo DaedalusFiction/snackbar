@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Notable&family=Shrikhand&display=swap");
 
 :root {
+    --fc-dark: #353535;
     --fc-light: #999999;
     --fc-accent: red;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .sliderA {
