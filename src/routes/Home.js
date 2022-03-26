@@ -8,11 +8,11 @@ const Home = () => {
         <>
             <Hero />
             <Container maxWidth="lg">
-                <Grid container>
+                <Grid container spacing={2}>
                     <Grid item container xs={12} md={8}>
                         <Grid item xs={12}>
                             <Typography variant="h2">
-                                Charlottesville's Greatest Covers
+                                Charlottesville's Greatest Covers!
                             </Typography>
                         </Grid>
                     </Grid>
