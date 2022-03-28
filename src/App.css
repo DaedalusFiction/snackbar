@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Notable&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
 
 :root {
     --fc-dark: #353535;
@@ -6,22 +7,37 @@
     --fc-accent: red;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    margin: 0.5rem 0;
+    filter: brightness(75%);
+}
+
+a {
+    text-decoration: none;
+    color: var(--fc-dark);
+}
+
+.about img {
+    max-height: 10rem;
 }
 
 .sliderA {
-    animation: slideA infinite 400s !important;
+    animation: slideA linear infinite 400s;
 }
 .sliderB {
-    animation: slideB infinite 400s !important;
+    animation: slideB linear infinite 400s;
 }
 .sliderA-overlay {
-    animation: slideA-overlay infinite 400s !important;
+    animation: slideA-overlay linear infinite 400s;
 }
 .sliderB-overlay {
-    animation: slideB-overlay infinite 400s !important;
+    animation: slideB-overlay linear infinite 400s;
 }
 
 @keyframes slideA {

@@ -1,21 +1,18 @@
-import React, { useState } from "react";
 import Header from "./Header";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
-import { ThemeProvider } from "@emotion/react";
-import { primary } from "../themes/primary";
+import { useInView } from "react-intersection-observer";
 import { Box } from "@mui/material";
 
 const Layout = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-
-    const handleOnScroll = () => {
-        console.log("scrolled");
-    };
+    const [headerRef, headerRefInView, headerEntry] = useInView({
+        threshold: 0,
+    });
 
     return (
-        <Box position="relative" onScroll={handleOnScroll}>
-            <Header />
+        <Box position="relative">
+            <Header inView={headerRefInView} />
+            <Box ref={headerRef} />
             <Outlet />
             <Footer />
         </Box>

@@ -26,13 +26,23 @@ const primary = createTheme({
         },
         h2: {
             fontFamily: "Shrikhand",
-            fontSize: "2.7rem",
+            fontSize: "2.5rem",
             color: FCDark,
+            marginBottom: ".5em",
         },
         h3: {
             fontFamily: "Shrikhand",
             fontSize: "2.7rem",
             color: FCAccent,
+        },
+        h4: {
+            fontFamily: "Shrikhand",
+            color: FCAccent,
+        },
+        p: {
+            fontFamily: "EB Garamond",
+            fontSize: "1.5rem",
+            lineHeight: "1.3em",
         },
     },
     custom: {

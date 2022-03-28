@@ -4,14 +4,16 @@ import Scroller from "./Scroller";
 
 const Hero = () => {
     return (
-        <Container maxWidth="xl">
+        <Container id="hero" maxWidth="xl">
             <Box sx={{ position: "relative", overflow: "hidden" }}>
-                <Scroller bandlist="A" />
-                <Scroller bandlist="B" />
-                <Scroller bandlist="A" />
-                <Scroller bandlist="B" />
-                <Scroller bandlist="A" />
-                <Scroller bandlist="B" />
+                <Box>
+                    <Scroller bandlist="A" />
+                    <Scroller bandlist="B" />
+                    <Scroller bandlist="A" />
+                    <Scroller bandlist="B" />
+                    <Scroller bandlist="A" />
+                    <Scroller bandlist="B" />
+                </Box>
                 <Box
                     sx={{
                         position: "absolute",
