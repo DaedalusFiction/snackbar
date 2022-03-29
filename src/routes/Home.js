@@ -221,29 +221,21 @@ const Home = () => {
                                     </p> */}
                             <FormControl>
                                 <InputLabel htmlFor="name">Name</InputLabel>
-                                <Input
-                                    id="nameInput"
-                                    name="nameInput"
-                                    aria-describedby="my-helper-text"
-                                />
+                                <Input id="name" name="name" />
                             </FormControl>
                             <FormControl>
-                                <InputLabel htmlFor="phoneInput">
+                                <InputLabel htmlFor="tel">
                                     Phone Number
                                 </InputLabel>
-                                <Input
-                                    id="phoneInput"
-                                    name="phoneInput"
-                                    aria-describedby="my-helper-text"
-                                />
+                                <Input id="tel" name="tel" />
                             </FormControl>
                             <FormControl>
-                                <InputLabel htmlFor="emailInput">
+                                <InputLabel htmlFor="email">
                                     Email address
                                 </InputLabel>
                                 <Input
-                                    id="emainInput"
-                                    name="emailInput"
+                                    id="email"
+                                    name="email"
                                     aria-describedby="my-helper-text"
                                 />
                                 <FormHelperText id="my-helper-text">
@@ -275,7 +267,7 @@ const Home = () => {
                                     </InputLabel>
                                     <Input
                                         id="emainInput"
-                                        name="emailInput"
+                                        name="email"
                                         aria-describedby="my-helper-text"
                                     />
                                     <FormHelperText id="my-helper-text">
