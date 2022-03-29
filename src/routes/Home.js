@@ -214,12 +214,37 @@ const Home = () => {
                                 name="form-name"
                                 value="contact"
                             />
+                            <TextField
+                                id="name"
+                                name="name"
+                                label="Name"
+                                variant="outlined"
+                            />
+                            <TextField
+                                id="tel"
+                                name="tel"
+                                label="Telephone"
+                                variant="outlined"
+                            />
+                            <TextField
+                                id="email"
+                                name="email"
+                                label="Email"
+                                variant="outlined"
+                            />
+                            <TextField
+                                id="message"
+                                label="Message"
+                                name="message"
+                                multiline
+                                minRows={4}
+                            />
                             {/* <p>
                                         <label>
                                             Your Name: <input type="text" name="name" />
                                         </label>
                                     </p> */}
-                            <FormControl>
+                            {/* <FormControl>
                                 <InputLabel htmlFor="name">Name</InputLabel>
                                 <Input id="name" name="name" />
                             </FormControl>
@@ -248,7 +273,8 @@ const Home = () => {
                                 name="message"
                                 multiline
                                 minRows={4}
-                            />
+                            /> 
+                            */}
                             {/* <p>
                                         <label>
                                             Message: <textarea name="message"></textarea>

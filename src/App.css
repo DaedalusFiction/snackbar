@@ -22,9 +22,6 @@ a {
     text-decoration: none;
     color: var(--fc-dark);
 }
-input {
-    padding: 0.5em !important;
-}
 
 .about img {
     max-height: 10rem;
