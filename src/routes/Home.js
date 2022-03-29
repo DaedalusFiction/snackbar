@@ -1,4 +1,17 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {
+    Box,
+    Container,
+    Grid,
+    Typography,
+    FormControl,
+    FormHelperText,
+    Input,
+    InputLabel,
+    IconButton,
+    Button,
+    TextField,
+    Paper,
+} from "@mui/material";
 
 import Hero from "../components/Hero";
 import mixer from "../assets/images/mixer.jpg";
@@ -160,32 +173,118 @@ const Home = () => {
                         marginBottom: "2rem",
                     }}
                 />
-                <Box id="contact">
-                    <Typography variant="h2" textAlign="center">
-                        Get in Touch
-                    </Typography>
-                    <form name="contact" method="post">
-                        <input type="hidden" name="form-name" value="contact" />
-                        <p>
-                            <label>
-                                Your Name: <input type="text" name="name" />
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                Your Email: <input type="email" name="email" />
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                Message: <textarea name="message"></textarea>
-                            </label>
-                        </p>
-                        <p>
-                            <button type="submit">Send</button>
-                        </p>
-                    </form>
-                </Box>
+                <Grid id="contact" container sx={{ margin: "3em 0" }}>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={7}
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                        }}
+                    >
+                        <Typography
+                            variant="h2"
+                            textAlign="center"
+                            sx={{ fontSize: "max(3em, 6vw)" }}
+                        >
+                            Get in Touch
+                        </Typography>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                        sm={5}
+                        sx={{ display: "flex", justifyContent: "center" }}
+                    >
+                        <form
+                            name="contact"
+                            method="post"
+                            style={{
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "center",
+                                width: "35ch",
+                                gap: "1em",
+                            }}
+                        >
+                            {/* <input
+                                    type="hidden"
+                                    name="form-name"
+                                    value="contact"
+                                /> */}
+                            {/* <p>
+                                        <label>
+                                            Your Name: <input type="text" name="name" />
+                                        </label>
+                                    </p> */}
+                            <FormControl>
+                                <InputLabel htmlFor="name">Name</InputLabel>
+                                <Input
+                                    id="nameInput"
+                                    name="nameInput"
+                                    aria-describedby="my-helper-text"
+                                />
+                            </FormControl>
+                            <FormControl>
+                                <InputLabel htmlFor="phoneInput">
+                                    Phone Number
+                                </InputLabel>
+                                <Input
+                                    id="phoneInput"
+                                    name="phoneInput"
+                                    aria-describedby="my-helper-text"
+                                />
+                            </FormControl>
+                            <FormControl>
+                                <InputLabel htmlFor="emailInput">
+                                    Email address
+                                </InputLabel>
+                                <Input
+                                    id="emainInput"
+                                    name="emailInput"
+                                    aria-describedby="my-helper-text"
+                                />
+                                <FormHelperText id="my-helper-text">
+                                    We'll never share your email.
+                                </FormHelperText>
+                            </FormControl>
+                            <TextField
+                                id="message"
+                                label="Message"
+                                multiline
+                                minRows={4}
+                            />
+                            {/* <p>
+                                        <label>
+                                            Message: <textarea name="message"></textarea>
+                                        </label>
+                                    </p>*/}
+                            <Button variant="contained" type="submit">
+                                Send
+                            </Button>
+                            {/* <p>
+                                        <button type="submit">Send</button>
+                                    </p> */}
+                            {/* <FormControl name="contact" method="post">
+                                    <input type="hidden" name="form-name" value="contact" />
+                                    <InputLabel htmlFor="my-input">
+                                        Email address
+                                    </InputLabel>
+                                    <Input
+                                        id="emainInput"
+                                        name="emailInput"
+                                        aria-describedby="my-helper-text"
+                                    />
+                                    <FormHelperText id="my-helper-text">
+                                        We'll never share your email.
+                                    </FormHelperText>
+                                    <Button type="submit">Send</Button>
+                                </FormControl> */}
+                        </form>
+                    </Grid>
+                </Grid>
             </Container>
         </>
     );

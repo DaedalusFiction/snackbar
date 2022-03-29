@@ -1,6 +1,5 @@
 import {
     Box,
-    Button,
     Container,
     IconButton,
     Menu,
@@ -8,27 +7,17 @@ import {
     Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import React, { useEffect, useState } from "react";
-import { useInView } from "react-intersection-observer";
-import { Link, useParams } from "react-router-dom";
+import { useState } from "react";
 
 const Header = ({ inView }) => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [didScrollDown, setDidScrollDown] = useState(false);
-
     const [anchorElNav, setAnchorElNav] = useState(null);
-    const pages = ["one", "two"];
-    const params = useParams();
+
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     };
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
-    };
-
-    const test = () => {
-        console.log(params);
     };
 
     // useEffect(() => {
@@ -112,7 +101,9 @@ const Header = ({ inView }) => {
                     </MenuItem>
                 </Menu>
 
-                <Typography variant="h4">SB</Typography>
+                <Typography variant="h4" sx={{ marginRight: "1em" }}>
+                    SB
+                </Typography>
             </Box>
 
             <Box
