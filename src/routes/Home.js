@@ -253,6 +253,7 @@ const Home = () => {
                             <TextField
                                 id="message"
                                 label="Message"
+                                name="message"
                                 multiline
                                 minRows={4}
                             />
