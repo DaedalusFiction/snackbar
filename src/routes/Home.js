@@ -75,11 +75,9 @@ const Home = () => {
                             >
                                 Founded during the pandemic of '21-22, SNACK BAR
                                 is comprised of the aforementioned Greg, Emily
-                                on the bass, and Dave and Emma as the
-                                are-they-siblings-are-they-lovers dynamic
-                                popularized by everyone's favorite The White
-                                Stripes, whose songs we can of course play at
-                                least a few. The best part? SNACK BAR also
+                                on the bass, Dave on the drums, and Emma rocking
+                                the keyboard and the tambourine, sometimes
+                                simultaneously. The best part? SNACK BAR also
                                 accepts requests, though please be aware that at
                                 this time we are limited to only songs we
                                 already know, most of which appear in the set
@@ -239,68 +237,10 @@ const Home = () => {
                                 multiline
                                 minRows={4}
                             />
-                            {/* <p>
-                                        <label>
-                                            Your Name: <input type="text" name="name" />
-                                        </label>
-                                    </p> */}
-                            {/* <FormControl>
-                                <InputLabel htmlFor="name">Name</InputLabel>
-                                <Input id="name" name="name" />
-                            </FormControl>
-                            <FormControl>
-                                <InputLabel htmlFor="tel">
-                                    Phone Number
-                                </InputLabel>
-                                <Input id="tel" name="tel" />
-                            </FormControl>
-                            <FormControl>
-                                <InputLabel htmlFor="email">
-                                    Email address
-                                </InputLabel>
-                                <Input
-                                    id="email"
-                                    name="email"
-                                    aria-describedby="my-helper-text"
-                                />
-                                <FormHelperText id="my-helper-text">
-                                    We'll never share your email.
-                                </FormHelperText>
-                            </FormControl>
-                            <TextField
-                                id="message"
-                                label="Message"
-                                name="message"
-                                multiline
-                                minRows={4}
-                            /> 
-                            */}
-                            {/* <p>
-                                        <label>
-                                            Message: <textarea name="message"></textarea>
-                                        </label>
-                                    </p>*/}
+
                             <Button variant="contained" type="submit">
                                 Send
                             </Button>
-                            {/* <p>
-                                        <button type="submit">Send</button>
-                                    </p> */}
-                            {/* <FormControl name="contact" method="post">
-                                    <input type="hidden" name="form-name" value="contact" />
-                                    <InputLabel htmlFor="my-input">
-                                        Email address
-                                    </InputLabel>
-                                    <Input
-                                        id="emainInput"
-                                        name="email"
-                                        aria-describedby="my-helper-text"
-                                    />
-                                    <FormHelperText id="my-helper-text">
-                                        We'll never share your email.
-                                    </FormHelperText>
-                                    <Button type="submit">Send</Button>
-                                </FormControl> */}
                         </form>
                     </Grid>
                 </Grid>
