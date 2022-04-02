@@ -20,22 +20,6 @@ const Header = ({ inView }) => {
         setAnchorElNav(null);
     };
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         if (window.scrollY > scrollPosition) {
-    //             setDidScrollDown(true);
-    //         } else {
-    //             setDidScrollDown(false);
-    //         }
-    //         setScrollPosition(window.scrollY);
-    //     };
-    //     window.addEventListener("scroll", handleScroll);
-    //     return () => {
-    //         console.log("removing listner");
-    //         window.removeEventListener("scroll", handleScroll);
-    //     };
-    // }, [scrollPosition]);
-
     return (
         <Container
             maxWidth="xl"
@@ -44,7 +28,7 @@ const Header = ({ inView }) => {
                 top: "0",
                 background: "#FFC700",
                 zIndex: "4",
-                padding: ".5em 0",
+                padding: "0",
                 borderBottom: !inView ? "1px solid var(--fc-accent)" : "none",
             }}
         >
@@ -110,7 +94,7 @@ const Header = ({ inView }) => {
                 sx={{
                     display: { xs: "none", md: "flex" },
                     justifyContent: "space-between",
-                    margin: "1em 0",
+                    margin: "0",
                     top: 0,
                 }}
             >

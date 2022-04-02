@@ -5,7 +5,13 @@ import Scroller from "./Scroller";
 const Hero = () => {
     return (
         <Container id="hero" maxWidth="xl">
-            <Box sx={{ position: "relative", overflow: "hidden" }}>
+            <Box
+                sx={{
+                    position: "relative",
+                    overflow: "hidden",
+                    marginTop: "3em",
+                }}
+            >
                 <Box>
                     <Scroller bandlist="A" />
                     <Scroller bandlist="B" />

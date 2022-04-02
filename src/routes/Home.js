@@ -3,31 +3,35 @@ import {
     Container,
     Grid,
     Typography,
-    FormControl,
-    FormHelperText,
-    Input,
-    InputLabel,
-    IconButton,
     Button,
     TextField,
-    Paper,
 } from "@mui/material";
 
 import Hero from "../components/Hero";
-import mixer from "../assets/images/mixer.jpg";
+import Header from "../components/Header";
 import guitar1 from "../assets/images/guitar1.jpg";
 import bass from "../assets/images/bass.jpg";
 import keyboard from "../assets/images/keyboard.jpg";
 import drums1 from "../assets/images/drums1.jpg";
-import drums2 from "../assets/images/drums2.jpg";
+import { useInView } from "react-intersection-observer";
 
 const Home = () => {
+    const [headerRef, headerRefInView, headerEntry] = useInView({
+        threshold: 0,
+    });
     return (
         <>
             <Hero />
-
+            <Header inView={headerRefInView} />
+            <Box ref={headerRef} />
             <Container maxWidth="lg">
-                <Grid id="about" className="about" container spacing={2}>
+                <Grid
+                    id="about"
+                    className="about"
+                    container
+                    spacing={4}
+                    sx={{ marginTop: "1em" }}
+                >
                     <Grid item container xs={12} md={8}>
                         <Grid item xs={12}>
                             <Typography
@@ -75,14 +79,14 @@ const Home = () => {
                             >
                                 Founded during the pandemic of '21-22, SNACK BAR
                                 is comprised of the aforementioned Greg, Emily
-                                on the bass, Dave on the drums, and Emma rocking
-                                the keyboard and the tambourine, sometimes
-                                simultaneously. The best part? SNACK BAR also
-                                accepts requests, though please be aware that at
-                                this time we are limited to only songs we
-                                already know, most of which appear in the set
-                                list already--but we're happy to play them
-                                again!
+                                on the bass, Dave on the muthafuckin' drums, and
+                                Emma rocking the keyboard and the tambourine,
+                                sometimes simultaneously. The best part? SNACK
+                                BAR also accepts requests, though please be
+                                aware that at this time we are limited to only
+                                songs we already know, most of which appear in
+                                the set list already--but we're happy to play
+                                them again!
                             </Typography>
                         </Grid>
                     </Grid>

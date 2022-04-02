@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { primary } from "../themes/primary";
 
 const Scroller = ({ bandlist }) => {
     const bandlistA =
