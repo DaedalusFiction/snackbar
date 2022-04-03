@@ -10,12 +10,13 @@ const Footer = () => {
             <Box
                 sx={{
                     display: "flex",
+                    gap: "2em",
                     justifyContent: "space-between",
                     margin: "1em 0",
                 }}
             >
                 <Typography variant="p" sx={{ color: "var(--fc-accent)" }}>
-                    Copyright 2022 SICKTOOTH
+                    Copyright 2022 SNACK BAR
                 </Typography>
                 <a href="#hero">
                     <Typography variant="p" sx={{ color: "var(--fc-accent)" }}>

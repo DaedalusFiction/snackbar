@@ -10,6 +10,7 @@ const Hero = () => {
                     position: "relative",
                     overflow: "hidden",
                     marginTop: "3em",
+                    display: { xs: "none", md: "block" },
                 }}
             >
                 <Box>
